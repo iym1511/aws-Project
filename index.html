@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>EV Charging Stations</title>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=860a89478f08fbf4a0711a567e3ac33e"></script>
+</head>
+<body>
+    <div id="map" style="width:100%;height:400px;"></div>
+    <div id="info" style="padding: 10px;font-size: 16px;"></div>
+    <script>
+        var mapContainer = document.getElementById('map'),
+            infoContainer = document.getElementById('info'),
+            mapOption = { 
+                center: new kakao.maps.LatLng(35.212557942251834, 129.07976807930407), 
+                level: 10
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+        var infoWindow = new kakao.maps.InfoWindow({zIndex:1});
+
+        fetch('https://ev-charging-stations-bucket.s3.ap-northeast-2.amazonaws.com/data.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (!Array.isArray(data)) {
+                    console.log('Received data is not an array');
+                    return;
+                }
+                data.forEach(station => {
+                    var markerPosition = new kakao.maps.LatLng(station.lat, station.lon);
+                    var marker = new kakao.maps.Marker({
+                        position: markerPosition
+                    });
+
+                    marker.setMap(map);
+
+                    kakao.maps.event.addListener(marker, 'click', function() {
+                        var content = '<div style="padding:5px;font-size:12px;">' + station.StationName + '<br>' + station.Address + '</div>';
+                        infoWindow.setContent(content);
+                        infoWindow.open(map, marker);
+                        
+                        // 정보를 infoContainer에 추가
+                        infoContainer.innerHTML = content;
+                    });
+                });
+            })
+            .catch(error => console.log('Error fetching station data:', error));
+    </script>
+</body>
+</html>

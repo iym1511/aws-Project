@@ -1,0 +1,107 @@
+[
+  {
+      "StationID": "1",
+      "StationName": "동래구청 충전소",
+      "lat": 35.2056,
+      "lon": 129.0798,
+      "Address": "부산광역시 동래구 명륜로 94"
+  },
+  {
+      "StationID": "2",
+      "StationName": "부산대학교 충전소",
+      "lat": 35.2322,
+      "lon": 129.0794,
+      "Address": "부산광역시 동래구 아시아드대로 63"
+  },
+  {
+      "StationID": "3",
+      "StationName": "롯데백화점 동래점 충전소",
+      "lat": 35.2052,
+      "lon": 129.0783,
+      "Address": "부산광역시 동래구 중앙대로 1393"
+  },
+  {
+      "StationID": "4",
+      "StationName": "사직야구장 충전소",
+      "lat": 35.1958,
+      "lon": 129.0606,
+      "Address": "부산광역시 동래구 사직로 45"
+  },
+  {
+      "StationID": "5",
+      "StationName": "동래문화회관 충전소",
+      "lat": 35.1973,
+      "lon": 129.0907,
+      "Address": "부산광역시 동래구 충렬대로 348"
+  },
+  {
+    "StationID": "6",
+    "StationName": "부산시청 충전소",
+    "lat": 35.1809,
+    "lon": 129.0744,
+    "Address": "부산광역시 연제구 중앙대로 1001"
+},
+{
+    "StationID": "7",
+    "StationName": "해운대구청 충전소",
+    "lat": 35.1636,
+    "lon": 129.1630,
+    "Address": "부산광역시 해운대구 중동 1500"
+},
+{
+    "StationID": "8",
+    "StationName": "광안리 해변공원 충전소",
+    "lat": 35.1550,
+    "lon": 129.1182,
+    "Address": "부산광역시 수영구 광안해변로 219"
+},
+{
+    "StationID": "9",
+    "StationName": "부산역 충전소",
+    "lat": 35.1151,
+    "lon": 129.0413,
+    "Address": "부산광역시 동구 중앙대로 206"
+},
+{
+    "StationID": "10",
+    "StationName": "남구청 충전소",
+    "lat": 35.1365,
+    "lon": 129.0926,
+    "Address": "부산광역시 남구 못골로 44"
+},
+{
+    "StationID": "11",
+    "StationName": "동부산대학교 충전소",
+    "lat": 35.1954,
+    "lon": 129.0896,
+    "Address": "부산광역시 해운대구 반송동 485"
+},
+{
+    "StationID": "12",
+    "StationName": "부산터미널 충전소",
+    "lat": 35.2145,
+    "lon": 129.0996,
+    "Address": "부산광역시 금정구 중앙대로 2236"
+},
+{
+    "StationID": "13",
+    "StationName": "센텀시티몰 충전소",
+    "lat": 35.1697,
+    "lon": 129.1307,
+    "Address": "부산광역시 해운대구 센텀남대로 35"
+},
+{
+    "StationID": "14",
+    "StationName": "부산항 충전소",
+    "lat": 35.1073,
+    "lon": 129.0373,
+    "Address": "부산광역시 중구 중앙대로 122"
+},
+{
+    "StationID": "15",
+    "StationName": "송정해변 충전소",
+    "lat": 35.1832,
+    "lon": 129.1993,
+    "Address": "부산광역시 해운대구 송정동 712"
+}
+]
